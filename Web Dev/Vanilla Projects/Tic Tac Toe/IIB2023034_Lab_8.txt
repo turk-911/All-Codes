@@ -1,0 +1,68 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+/*Defining a structure*/
+struct record{
+        char f_name[10];
+        char l_name[10];
+        int roll_no;
+        char mobile_no[11];
+};
+
+/*function to take input*/
+void giveInput(struct record arr[], int n){
+        for(int i = 0; i < n; i++){
+                printf("\nFor %d th student: \n", i + 1);
+                printf("First name: ");
+                scanf("%s", arr[i].f_name);
+                printf("Second Name: ");
+                scanf("%s", arr[i].l_name);
+                printf("roll number: ");
+                scanf("%d", &arr[i].roll_no);
+                printf("Mobiler number: ");
+                scanf("%s", arr[i].mobile_no);
+
+        }
+}
+
+/*Function to print the values*/
+void print(struct record arr[], int n){
+        for(int i = 0; i < n; i++){
+                printf("For student %d \n", i + 1);
+                printf("first name = %s \n", arr[i].f_name);
+                printf("second name = %s \n", arr[i].l_name);
+                printf("roll num = %d \n", arr[i].roll_no);
+                printf("mobile_no = %s \n", arr[i].mobile_no);
+        }
+}
+
+/*Swapping function*/
+int swap(struct record arr[], int i, int j){
+        struct record temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+
+
+        return 0;
+}
+void sortingFunction(struct record &arr[], int n){
+        for(int i = 0; i < n; i++){
+                for(int j = 0; j < n - 1; j++){
+                        if(arr[j].f_name > arr[j + 1].f_name){
+                                swap(arr, j, j + 1);
+                        }
+                }
+        }
+}
+
+int main() {
+        int n; // number of students
+        printf("Enter the number of students: \n");
+        scanf("%d", &n);
+        struct record arr[n];
+        giveInput(arr, n);
+        printf("\n \n \n");
+
+        sortingFunction(arr, n);
+        print(arr, n);
+}

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  overflow: auto;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9fafe;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html {
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}

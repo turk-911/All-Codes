@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "ios": "cpp",
+        "list": "cpp",
+        "ostream": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled",
+    "git.ignoreLimitWarning": true
+}

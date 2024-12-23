@@ -1,0 +1,2 @@
+this is an example of parallel routing 
+isme folders will be passed as props directly to layout.tsx file

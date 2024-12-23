@@ -1,0 +1,1 @@
+{"name":"Local: a","url":"/Users/mokshejain/Desktop/Coding/CP/a.cpp","tests":[{"id":1734438816374,"input":"5\n165\n6369\n666\n114514\n133333332\n","output":"YES\nNO\nYES\nNO\nYES\nNO\nNO\nNO\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/mokshejain/Desktop/Coding/CP/a.cpp","group":"local","local":true}

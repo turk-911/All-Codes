@@ -1,0 +1,7 @@
+# wrapping the folder name in parenthesis means that it is route grouping, now it won't be shown in the url
+firstly the url was like localhost:3000/auth/register but it might not be well suited for marketing so wrapped up in parenthesis
+now the url looks like this := localhost:3000/register and everything works perfectly DAMN
+
+
+if we rename the file from layout.tsx to template.tsx, the state will not be preserved across files
+state will be set to default value as soon as we change the page

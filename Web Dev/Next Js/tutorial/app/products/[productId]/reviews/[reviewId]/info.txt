@@ -1,0 +1,14 @@
+### error.tsx
+# automatically wrap a route segment and its nested children in a React error boundary
+# create error UI tailored to a specific segments using the file-system hierarchy to adjust granularity
+# isolate errors to affected segments while keeping the rest of the application functional
+add functionality to attempt to recover from an error without a full page reload
+
+
+### handling errors in nested route segments
+# errors bubble up to the closest parent error boundary
+# an error.tsx file will cater to errors for all its nested child segments
+# by positioning error.tsx file at different levels, a more granular level of error handling can be achieved
+
+### handling error in layout.tsx
+# if an error occurs in layout.tsx file, it will be handled by error.tsx only if this file is placed in parent directory of layout.tsx

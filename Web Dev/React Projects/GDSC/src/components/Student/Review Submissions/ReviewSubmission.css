@@ -1,0 +1,107 @@
+.checked-submission-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  max-width: 400px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.div-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;;
+}
+.top-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  /* background-color: #333; */
+}
+.checked-submission-card .light-heading {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.checked-submission-card .light-p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+.dark {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  max-width: 400px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  border: 1px solid #ddd;
+  background: transparent;
+}
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.status {
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.checked {
+  color: green;
+  background-color: #e6ffe6;
+}
+.unchecked {
+  color: red;
+  background-color: #ffe6e6;
+}
+.checked-submission-card:hover, .dark:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .checked-submission-card {
+    max-width: 100%; 
+    padding: 15px;
+    margin: 10px 0;
+  }
+  .checked-submission-card .light-heading, .dark-heading {
+    font-size: 18px;
+  }
+  .checked-submission-card .light-p, .dark-p {
+    font-size: 14px;
+  }
+  .status {
+    font-size: 16px;
+  }
+}
+h2 {
+  text-align: center;
+  padding: 12px;
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+.something {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.dark-heading {
+  color: white;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.dark-p {
+  margin: 5px 0;
+  font-size: 16px;
+}
